@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tax Calculator Project</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Tax Calculator Project">
+  <meta name="author" content="Libardo Lopez">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Tax Calculator Project</h1>
+    <h2>Developing Data Products</h2>
+    <p>Libardo Lopez<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Settings</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>title       : Tax Calculator Project<br>
+subtitle    : Developing Data Products<br>
+author      : Libardo Lopez<br>
+job         :<br>
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}<br>
+highlighter : highlight.js  # {highlight.js, prettify, highlight}<br>
+hitheme     : tomorrow      #<br>
+widgets     : []            # {mathjax, quiz, bootstrap}<br>
+mode        : selfcontained # {standalone, draft}<br>
+knit        : slidify::knit2slides  </p>
+
+<h2>Instructions:</h2>
+
+<p>To figure your annual taxes, please fill the form, INCOME &amp; RELIEFS.<br>
+Please note all fields has been fixed to 0; so change them with your info.<br>
+Once you have your data complete, click the <strong>ENTER</strong> button.<br>
+The results will be shown.<br>
+It is just an academic exercise. Don&#39;t use it for real issues.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>How it works?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>First al all, you must have your verifiable info for Income &amp; Reliefs<br>
+The app figures some intermediate results as:  </p>
+
+<ul>
+<li>Net Employment Income NEI<br></li>
+<li>Total Income TI<br></li>
+<li>Assessable Income ASI<br></li>
+<li>Chargeable Income CI<br></li>
+<li>Net tax Payable NTP<br></li>
+</ul>
+
+<p>To obtain the NTP, we apply a rate (11.5%) to the Chargeable Income CI, after add all income and minus all discounts authorized.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Lay out</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>For Legibility, we separate the info in:</p>
+
+<ul>
+<li>INCOME, </li>
+<li>RELIEFS &amp; </li>
+<li>RESULTS </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Conclusions &amp; Future Work</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Slidify and Shiny are powerful tools to develop and implement Apps fast and in an easy way</li>
+<li>In order to have an useful App, we must take into account all requirements from the taxes authority</li>
+<li>Aditionally, we must include a communications protocol to submit the users declaration directly to the taxes authority</li>
+<li>The responsability is for the user</li>
+<li>Just Relax. Simon Maple @sjmaple says: &quot;APIs are like jokes. If you have to explain them, they&#39;re no good!&quot;</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Settings'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How it works?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Lay out'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusions &amp; Future Work'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
